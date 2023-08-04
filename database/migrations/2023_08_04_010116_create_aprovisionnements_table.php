@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id("id_approvisionnement");
             $table->dateTime("dateApprovisionnement");
             $table->dateTime("dateExpiration");
-            $table->int("quantite");
+            $table->integer("quantite");
             $table->float("pu");
             $table->float("prix");
             $table->foreignId('id_produit')->references("id_produit")->on("produits");
